@@ -1,0 +1,41 @@
+<html>
+<head>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+ </link>
+ <title><%=title	%></title>
+</head>
+<body background ="./untitled1.png">
+  <%	for(var	i	in	messages)	{	%>
+      <div	class="flash"><%=	messages[i]	%></div>
+  <%	}	%>
+<form  method='post' action="">
+  <table border=0>
+    	<tr style = "color:white; background-color:black;"><td>
+		<h4 style = "float: left; font-weight: bold; margin-left: 36px; font-size: 24pt; color:white;"> AutoAD </h4></td><td></td><td>
+		</td>
+	 </tr>
+	 <tr height ="400px"><td width = "35%"></td><td width = "30%" style="text-align:center; background-color:white;border-color:black; border-width:2px;">
+	 <div style="text-align:left">
+	 <h4 style = "margin-left: 36px; margin-bottom:36px; font-size: 30pt; color:black;"> Log In</h4>
+	 <div style="margin-left:32px; margin-right:32px">
+			<div class="input-field col s6">
+      <input name='username' id="first_name2" type="text" class="validate">
+      <label class="active" for="first_name2">Username</label>
+	  <div class="input-field col s6">
+      <input name="password" id="first_name2" type="text" class="validate">
+      <label class="active"  for="first_name2">Password</label>
+    </div>
+
+	 </div></div>
+	  <div style="text-align:center; margin-top:24px;">
+									<a class="waves-effect waves-light btn"href="/success/">Log In</a>
+							</div>
+          </td><td></td><td>
+	 </td><td width = "35%"></td>
+	 </tr>
+ </form>
+</body>
+</html>

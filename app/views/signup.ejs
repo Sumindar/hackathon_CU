@@ -1,0 +1,125 @@
+<html>
+<head>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+ </link>
+ <title><%=	title	%></title>
+</head>
+<body background ="./untitled.png">
+  <%	for(var	i	in	messages)	{	%>
+      <div	class="flash"><%=	messages[i]	%></div>
+  <%	}	%>
+  <form	action="/signup"	method="post">
+	<table border = "0">
+	<tr><td>
+		<h4 style = "float: left; font-weight: bold; margin-left: 36px; font-size: 24pt; color:white;"> AutoAD</h4></td><td>
+		<a style = "float: right;  color:white; " class="waves-effect waves-teal btn-flat"> <b>ABOUT US</b></a>
+		<a style = "float: right;  color:white; " class="waves-effect waves-teal btn-flat" href="/signin"> <b>SIGN IN</b></a>
+		<a style = "float: right;  color:white; " class="waves-effect waves-teal btn-flat"> <b>HELP</b></a>
+		</td>
+	 </tr>
+	 <tr>
+		<td>
+
+		 <div class="row">
+			<div class="col s12 m6">
+				<div class="card white darken-1">
+				<div class="card-content white-text" style="height:380px;">
+					<span class="card-title" style="color:black;"> Sign Up as a User</span>
+
+									<div >
+									<div class="input-field col s6">
+									  <input value="" id="first_name2" type="text" class="validate">
+									  <label class="active" name="firstName" for="first_name2">First Name</label>
+									</div><div class="input-field col s6">
+									  <input value="" id="first_name2" name="lastName" type="text" class="validate">
+									  <label class="active" for="first_name2">Last Name</label>
+									</div>
+								 </div>
+								<div >
+									<div class="input-field col s6">
+									  <input value="" id="first_name2" type="text" class="validate">
+									  <label class="active" for="first_name2" 	name="email">Email</label>
+									</div>
+								 </div>
+
+								<div >
+									<div class="input-field col s12">
+									  <input value="" id="first_name2" type="text" class="validate">
+									  <label class="active" name="username" for="first_name2">username</label>
+									</div>
+								 </div>
+                 <div>
+ 									<div class="input-field col s6">
+ 									  <input value="" id="first_name2" type="text" class="validate">
+ 									  <label class="active"  name="password" for="first_name2">Create Password</label>
+ 									</div>
+ 								 </div>
+								<div style="text-align:center; margin-top:24px;">
+
+                    <a class="waves-effect waves-light btn" value="signup" href="/success/">Sign Up</a>
+                  		</div>
+
+			</div>
+			<div class="card-action">
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</td>
+		<td>
+			<div width ="50%" class="row" >
+			<div class="col s12 m6">
+				<div class="card cyan darken-4">
+				<div class="card-content white-text" style="height:400px;">
+					<span class="card-title">Sign Up as a Partner</span>
+
+          <div >
+          <div class="input-field col s6">
+            <input value="" id="first_name2" type="text" class="validate">
+            <label class="active" name="firstName" for="first_name2">First Name</label>
+          </div><div class="input-field col s6">
+            <input value="" id="first_name2" name="lastName" type="text" class="validate">
+            <label class="active" for="first_name2">Last Name</label>
+          </div>
+         </div>
+        <div >
+          <div class="input-field col s6">
+            <input value="" id="first_name2" type="text" class="validate">
+            <label class="active" for="first_name2" 	name="email">Email</label>
+          </div>
+         </div>
+
+        <div >
+          <div class="input-field col s12">
+            <input value="" id="first_name2" type="text" class="validate">
+            <label class="active" name="username" for="first_name2">username</label>
+          </div>
+         </div>
+         <div>
+          <div class="input-field col s6">
+            <input value="" id="first_name2" type="text" class="validate">
+            <label class="active"  name="password" for="first_name2">Create Password</label>
+          </div>
+         </div>
+        <div style="text-align:center; margin-top:24px;">
+          <a class="waves-effect waves-light btn" value="signup" href="/upload/">Sign Up</a>
+      </div>
+</div>
+			</div>
+			<div class="card-action">
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</td>
+	 </tr>
+	 <tr style = "color:white; background-color:black;"><td>
+		<h7 style="color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Team <big>Phoenix</big>&nbsp;&nbsp;&nbsp;&nbsp;Panjab University</h7>
+		</td><td style = "color:white; background-color:black;" ></td>
+	 </tr>
+ </table>
+</head>
+</html>
