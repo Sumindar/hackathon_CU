@@ -26,7 +26,13 @@ exports.list	=	function(req,	res,	next)	{
 exports.freq = function(req,res,next	){
 
 	var sector=[1,2,3,4,5,6,7,8,9,10];
-	var data = [ new kNN.Node({paramA: 1, paramB:1 , type: 'hasdm7@yahoo.com'}), new kNN.Node({paramA: 2, paramB: 2, type: 'hasdm7@yahoo.com'}), new kNN.Node({paramA: 3, paramB: 3, type: 'ahdah@gmail.com'}), new kNN.Node({paramA: 4, paramB: 4, type: 'ahdah@gmail.com'}), new kNN.Node({paramA: 5, paramB: 5, type: 'nagpalm7@gmail.com'}), new kNN.Node({paramA: 6, paramB: 6, type: 'nagpalm7@gmail.com'}) ];
+	var data = [ new kNN.Node({paramA: 1, paramB:1 , type: 'hasdm7@yahoo.com'}),
+							 new kNN.Node({paramA: 2, paramB: 2, type: 'hasdm7@yahoo.com'}),
+							 new kNN.Node({paramA: 3, paramB: 3, type: 'ahdah@gmail.com'}),
+							 new kNN.Node({paramA: 4, paramB: 4, type: 'ahdah@gmail.com'}),
+							 new kNN.Node({paramA: 5, paramB: 5, type: 'nagpalm7@gmail.com'}),
+							 new kNN.Node({paramA: 6, paramB: 6, type: 'nagpalm7@gmail.com'}) ];
+
 	var autolist = [];
 	var example = new kNN(data);
 	for (var i = 0; i < sector.length; i++) {
